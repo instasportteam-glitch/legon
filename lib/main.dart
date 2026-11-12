@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'screens/intro_screen.dart';
-import 'screens/shell.dart';
+import 'screens/webview_screen.dart';
 import 'state/app_state.dart';
 import 'theme.dart';
 
@@ -29,7 +29,7 @@ class LegOnApp extends StatelessWidget {
         title: 'LEG ON',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(),
-        home: IntroGate(loading: loading, child: const Shell()),
+        home: IntroGate(loading: loading, child: const WebViewScreen()),
       ),
     );
   }
